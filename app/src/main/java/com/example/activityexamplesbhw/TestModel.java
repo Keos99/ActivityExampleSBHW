@@ -6,14 +6,14 @@ import android.os.Parcelable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyObject implements Parcelable {
+public class TestModel implements Parcelable {
 
-    public String mFirstString;
-    public String mSecondString;
-    public List<Integer> mFirstCollection;
-    public List<Integer> mSecondCollection;
+    private String mFirstString;
+    private String mSecondString;
+    private List<Integer> mFirstCollection;
+    private List<Integer> mSecondCollection;
 
-    private MyObject(Parcel parcel) {
+    private TestModel(Parcel parcel) {
         mFirstCollection = new ArrayList<>();
         mSecondCollection = new ArrayList<>();
         mFirstString = parcel.readString();
@@ -29,15 +29,15 @@ public class MyObject implements Parcelable {
         parcel.writeList(mSecondCollection);
     }
 
-    public static final Creator<MyObject> CREATOR = new Creator<MyObject>() {
+    public static final Creator<TestModel> CREATOR = new Creator<TestModel>() {
         @Override
-        public MyObject createFromParcel(Parcel in) {
-            return new MyObject(in);
+        public TestModel createFromParcel(Parcel in) {
+            return new TestModel(in);
         }
 
         @Override
-        public MyObject[] newArray(int size) {
-            return new MyObject[size];
+        public TestModel[] newArray(int size) {
+            return new TestModel[size];
         }
     };
 
