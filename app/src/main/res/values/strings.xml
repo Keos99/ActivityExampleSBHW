@@ -5,6 +5,7 @@
     <string name="button_catalog">To map</string>
     <string name="button_map">To search</string>
     <string name="button_search">To account</string>
+    <string name="button_account">To catalog</string>
 
     <string-array name="chars">
         <item>q</item>

@@ -11,8 +11,7 @@ import androidx.annotation.NonNull;
 
 import java.util.List;
 
-public class ThirdActivity extends Activity {
-
+public class FourthActivity extends Activity {
     private String mFirstString;
     private String mSecondString;
     private List<Integer> mFirstCollection;
@@ -27,7 +26,7 @@ public class ThirdActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third);
+        setContentView(R.layout.activity_fourth);
         initUI();
         initListeners();
         initData();
@@ -54,11 +53,11 @@ public class ThirdActivity extends Activity {
     }
 
     public void initUI(){
-        mTextViewFirstString = findViewById(R.id.tv_search_first_string);
-        mTextViewSecondString = findViewById(R.id.tv_search_second_string);
-        mTextViewFirstCollection = findViewById(R.id.tv_search_first_list);
-        mTextViewSecondCollection = findViewById(R.id.tv_search_second_list);
-        mButton = findViewById(R.id.button_search);
+        mTextViewFirstString = findViewById(R.id.tv_account_first_string);
+        mTextViewSecondString = findViewById(R.id.tv_account_second_string);
+        mTextViewFirstCollection = findViewById(R.id.tv_account_first_list);
+        mTextViewSecondCollection = findViewById(R.id.tv_account_second_list);
+        mButton = findViewById(R.id.button_account);
     }
 
     private void initListeners(){
@@ -71,7 +70,7 @@ public class ThirdActivity extends Activity {
     }
 
     private void onButtonClick(){
-        Intent intent = new Intent(this, FourthActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
