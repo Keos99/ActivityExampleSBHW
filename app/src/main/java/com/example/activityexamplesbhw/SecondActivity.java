@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 
 import java.util.List;
 
-public class MainActivity extends Activity {
+public class SecondActivity extends Activity {
 
     private String mFirstString;
     private String mSecondString;
@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
         initUI();
         initListeners();
         initData();
@@ -53,12 +53,12 @@ public class MainActivity extends Activity {
         setDataFromTestModel();
     }
 
-    private void initUI(){
-        mTextViewFirstString = findViewById(R.id.tv_catalog_first_string);
-        mTextViewSecondString = findViewById(R.id.tv_catalog_second_string);
-        mTextViewFirstCollection = findViewById(R.id.tv_catalog_first_list);
-        mTextViewSecondCollection = findViewById(R.id.tv_catalog_second_list);
-        mButton = findViewById(R.id.button_catalog);
+    public void initUI(){
+        mTextViewFirstString = findViewById(R.id.tv_map_first_string);
+        mTextViewSecondString = findViewById(R.id.tv_map_second_string);
+        mTextViewFirstCollection = findViewById(R.id.tv_map_first_list);
+        mTextViewSecondCollection = findViewById(R.id.tv_map_second_list);
+        mButton = findViewById(R.id.button_map);
     }
 
     private void initListeners(){
