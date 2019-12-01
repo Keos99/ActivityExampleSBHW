@@ -1,11 +1,10 @@
 <resources>
     <string name="app_name">ActivityExampleSBHW</string>
-    <string name="button_1">Button 1</string>
-    <string name="from_mainactivity">Из MainActivity</string>
-    <string name="from_catalog">Из каталога</string>
-    <string name="to_mao">В карту</string>
-    <string name="button_catalog">To map</string>
     <string name="TestModel">TestModel</string>
+
+    <string name="button_catalog">To map</string>
+    <string name="button_map">To search</string>
+    <string name="button_search">To account</string>
 
     <string-array name="chars">
         <item>q</item>
